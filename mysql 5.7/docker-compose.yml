@@ -1,0 +1,13 @@
+version: "1.0"
+services: 
+    db:
+        image: mysql:5.7
+#        container_name: ttt
+        ports:
+#동일         - 9876:3306
+         - "9876:3306"
+        volumes:
+         - C:\Users\jooladen\Desktop\mysql5.7:/var/lib/mysql
+        environment:
+         - MYSQL_ROOT_PASSWORD=12345
+         - TZ=Asia/Seoul
